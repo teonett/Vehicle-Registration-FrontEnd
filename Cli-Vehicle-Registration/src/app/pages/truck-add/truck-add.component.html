@@ -1,0 +1,39 @@
+
+<div style="width: 80%;">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group col-sm">
+
+            <div class="row">
+                <div class="col-sm">
+                    <small>Description</small>
+                    <input type="text" class="form-control" id="description" name="description" required [(ngModel)]="truck.description">
+                </div>
+                <div class="form-group col-sm" id="truckModelId">
+                    <small for="truckModelId">Truck Model</small><br>
+                    <select class="form-control" id="truckModelId" name="truckModelId" [(ngModel)]="truck.truckModelId" type="text">
+                        <option *ngFor="let model of truckmodels" value="{{model.id}}">{{ model.description }}</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group col-sm">
+                    <small for="yearBuild">Year Build</small>
+                    <input type="number" minlength="4" maxlength="4" min="2000" max="9999" class="form-control" id="yearBuild" name="yearBuild" placeholder="2021" required [(ngModel)]="truck.yearBuild">
+                </div> 
+                <div class="form-group col-sm">
+                    <small for="yearModel">Year Model</small>
+                    <input type="number" class="form-control" id="yearModel" name="yearModel" placeholder="2021" required [(ngModel)]="truck.yearModel">
+                </div>                  
+            </div>
+
+            <br>
+            <div class="text-right mb-3">
+                <button type="button" class="btn btn-success btn-sm" (click)="saveTruck()">SAVE</button>
+                <button type="button" class="btn btn-warning btn-sm" (click)="gotoList()">CANCEL</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+

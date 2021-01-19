@@ -1,0 +1,13 @@
+<div style="width: 80%;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <small for="description">Description</small>
+      <input type="text" class="form-control" id="description" required [(ngModel)]="model.description" name="description">
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-success btn-sm" (click)="saveTruckModel()">SAVE</button>
+        <button type="button" class="btn btn-warning btn-sm" (click)="gotoList()">CANCEL</button>
+    </div>
+  </form>
+</div>

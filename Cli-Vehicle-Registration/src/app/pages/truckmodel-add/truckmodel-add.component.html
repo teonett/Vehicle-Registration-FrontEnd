@@ -1,0 +1,21 @@
+
+<div style="width: 100%;">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group col-sm">
+
+            <div class="row">
+                <div class="col-sm">
+                    <small>Description</small>
+                    <input type="text" class="form-control" id="description" name="description" required [(ngModel)]="truckModel.description">
+                </div>
+            </div>
+            <br>
+            <div class="text-right mb-3">
+                <button type="button" class="btn btn-success btn-sm" (click)="saveTruckModel()">SAVE</button>
+                <button type="button" class="btn btn-warning btn-sm" (click)="gotoList()">CANCEL</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+

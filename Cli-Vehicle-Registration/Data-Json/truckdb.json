@@ -1,0 +1,47 @@
+{
+  "trucks": [
+    {
+      "id": 1,
+      "description": "VOLVO",
+      "yearBuild": "2021",
+      "yearModel": "2021",
+      "truckModelId": 1,
+      "truckModel": {
+        "id": 1,
+        "description": "FXO"
+      }
+    },
+    {
+      "id": 2,
+      "description": "VW",
+      "yearBuild": "2021",
+      "yearModel": "2021",
+      "truckModelId": 1,
+      "truckModel": {
+        "id": 1,
+        "description": "FXO"
+      }
+    },
+    {
+      "description": "SCANIA",
+      "truckModelId": "1",
+      "yearBuild": 2021,
+      "yearModel": 2021,
+      "id": 3
+    }
+  ],
+  "truckmodels": [
+    {
+      "id": 1,
+      "description": "FXO"
+    },
+    {
+      "description": "FH",
+      "id": 2
+    },
+    {
+      "description": "ULT",
+      "id": 4
+    }
+  ]
+}
