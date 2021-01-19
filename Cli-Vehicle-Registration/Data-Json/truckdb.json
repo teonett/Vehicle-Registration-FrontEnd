@@ -24,10 +24,14 @@
     },
     {
       "description": "SCANIA",
-      "truckModelId": "1",
       "yearBuild": 2021,
       "yearModel": 2021,
-      "id": 3
+      "id": 3,
+      "truckModelId": 1,
+      "truckModel": {
+        "id": 1,
+        "description": "FXO"
+      }
     }
   ],
   "truckmodels": [
